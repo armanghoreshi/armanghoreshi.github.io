@@ -1,0 +1,103 @@
+.face_container{
+    position: absolute;
+    height: 400px;
+    width: 259px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-10deg);
+    border: 1px black solid;
+    //background-color: black;
+}
+.face{
+    position: absolute;
+    background-color: #f7dece;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 120px;
+    height: 160px;
+    border: white 0 solid;
+    border-radius: 10px 10px 40px 40px ;
+}
+.top_hair{
+    position: absolute;
+    background-color: #3A3A3A;
+    top: 30%;
+    left: 53%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+}
+.left_hair{
+    position: absolute;
+    background-color: #3A3A3A;
+    top: 35%;
+    left: 26%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.mouth{
+    position: absolute;
+    background-color: #e75a70;
+    top: 64%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 48px;
+    height: 40px;
+    border-radius: 5px 5px 20px 20px;
+}
+.teeth{
+    position: absolute;
+    background-color: #ffffff;
+    top: 59%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50px;
+    height: 10px;
+    border-radius: 20px;
+}
+.chin{
+    position: absolute;
+    background-color: #f7dece;
+    top: 66%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px 5px 20px 20px;
+    z-index: -1;
+}
+.eye{
+    position: absolute;
+    background-color: #f7dece;
+    top: 46%;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 7px solid black;
+    border-bottom-color: #f7dece;
+    border-left-color: #f7dece;
+}
+.eye{
+    left: 60%;
+}
+.left{
+    left: 42%;
+}
+.nose{
+    position: absolute;
+    background-color: #c1694f ;
+    top: 53%;
+    left: 53%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20px;
+    height: 10px;
+    border: solid 0;
+    border-radius: 0 0 50% 50%;
+}
