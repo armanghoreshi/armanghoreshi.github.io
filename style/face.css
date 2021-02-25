@@ -174,7 +174,7 @@
         top: 10%;
     }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 781px) {
     @keyframes face_move {
         to {
             left: 20%;
