@@ -162,28 +162,27 @@
     }
 }
 @keyframes face_move {
+    from{
+
+    }
     to {
-        left: 20%;
+        top: 20%;
     }
 }
 @keyframes bubble_move {
     to {
-        left: 25%;
+        top: 10%;
     }
 }
-@media only screen and (max-width: 700px) {
-
+@media only screen and (min-width: 600px) {
     @keyframes face_move {
-        from{
-
-        }
         to {
-            top: 20%;
+            left: 20%;
         }
     }
     @keyframes bubble_move {
         to {
-            top: 10%;
+            left: 25%;
         }
     }
 }
