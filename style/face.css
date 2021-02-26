@@ -175,8 +175,29 @@
     }
 }
 @media only screen and (min-width: 781px) {
+
     .face_container{
-        transform: translateX(-50%) translateY(-50%) rotate(-10deg) scale(1);
+        left: 50%;
+    }
+    .bubble{
+        left:54%;
+        top: 40%;
+    }
+    @keyframes appear {
+        from {
+            transform: scale(0) translateX(-50%) translateY(-50%) rotate(10deg);
+        }
+        to {
+            transform: scale(1) translateX(-50%) translateY(-50%) rotate(-10deg);
+        }
+    }
+    @keyframes appear_bubble {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
     }
     @keyframes face_move {
         to {
