@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="En">
     <head>
         <title>Arman Ghoreshi</title>
 
@@ -17,11 +17,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     </head>
     <body>
         <div class="navbar" style="position: fixed">
             <a href="#contact">Contact Info</a>
-            <p>|</p>
             <a href="https://drive.google.com/file/d/1KBzqE554uMbxmjg1Y3dTU9Casbx6817s/view?usp=sharing">Download CV</a>
         </div>
         <div class="face_container">
@@ -45,12 +50,12 @@
         <div class="bg bg3"></div>
         <div class="main_container">
             <div class="landing_container">
-                <div class="card gray"></div>
+                <div class="card blue" data-aos="fade-up"></div>
             </div>
             <div class="section_container">
-                <div class="section_element"></div>
-                <div class="section_element"></div>
-                <div class="section_element"></div>
+                <div class="card blue" data-aos="fade-up"></div>
+                <div class="card blue" data-aos="fade-up"></div>
+                <div class="card blue" data-aos="fade-up"></div>
             </div>
             <div class="section_container">
                 <div class="section_element"></div>
@@ -59,6 +64,11 @@
             <div class="section_container">
             </div>
         </div>
+    <script>
+      AOS.init({
+        duration: 500,
+      })
+    </script>
     </body>
 </html>
 
