@@ -2,12 +2,13 @@
     overflow: visible;
     background-color: #CFD8DC;
     position: fixed;
-    top: 0;
+    bottom: 0;
     width: 100%;
     z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: Roboto, sans-serif;
 }
 
 .navbar a {
@@ -23,8 +24,10 @@
 }
 
 .navbar a:hover {
-    color: #01579B;
-    transform: translateY(5px) scale(1.1) translateZ(5px);
+    color: #0091EA;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px -2px rgba(1,87,155,.3), 0 2px 2px 0 rgba(1,87,155,.24);
+    transform: translateY(1px) translateX(-1px);
 }
 
 .navbar p {
@@ -41,5 +44,7 @@
 @media screen and (min-width: 781px) {
     .navbar {
         justify-content: flex-end;
+        bottom: auto;
+        top:0;
     }
 }

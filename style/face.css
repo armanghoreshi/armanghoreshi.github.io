@@ -109,7 +109,7 @@
     position: absolute;
     top:45%;
     left:45%;
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 18px;
     line-height: 24px;
     width: 200px;
@@ -166,12 +166,12 @@
 
     }
     to {
-        top: 20%;
+        top: 10%;
     }
 }
 @keyframes bubble_move {
     to {
-        top: 12%;
+        top: 5%;
     }
 }
 @keyframes float {
