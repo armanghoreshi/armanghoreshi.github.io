@@ -1,6 +1,6 @@
 body{
     /*border: 2px solid blue;*/
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .main_container{
     display: flex;
@@ -26,10 +26,22 @@ body{
     justify-content: center;
 }
 .section_element{
-    min-height: 100px;
-    min-width: 300px;
-    /*border: 3px solid red;*/
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
 }
+#landing_spacer{
+    height: 30%;
+}
+#introduction {
+    height: 65%;
+    transform: scale(0);
+    animation: appear_element 1s 3s forwards;
+}
+
 .card {
     background-color: #fff;
     -moz-border-radius: 4px;
@@ -41,7 +53,22 @@ body{
     height: 90vh;
     width: 90%;
     overflow: hidden;
-    z-index: -1;
+    padding: 10px;
+}
+.card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.card_container img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    align-self: center;
 }
 .card.gray {
     -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.24), 0 1px 5px 0 rgba(0,0,0,.22);
@@ -53,24 +80,100 @@ body{
     -webkit-box-shadow: 0 3px 1px -2px rgba(1,87,155,.3), 0 2px 2px 0 rgba(1,87,155,.24), 0 1px 5px 0 rgba(1,87,155,.22);
     box-shadow: 0 3px 1px -2px rgba(1,87,155,.3), 0 2px 2px 0 rgba(1,87,155,.24), 0 1px 5px 0 rgba(1,87,155,.22);
 }
-.card.red {
-    -moz-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    -webkit-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-}
-.card.green {
-    -moz-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    -webkit-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    box-shadow: 0 3px 1px -2px rgba(0, 105, 92,.3), 0 2px 2px 0 rgba(0, 105, 92,.24), 0 1px 5px 0 rgba(0, 105, 92,.22);
-}
-.card.pink {
-    -moz-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    -webkit-box-shadow: 0 3px 1px -2px rgba(244, 67, 54,.3), 0 2px 2px 0 rgba(244, 67, 54,.24), 0 1px 5px 0 rgba(244, 67, 54,.22);
-    box-shadow: 0 3px 1px -2px rgba(197, 17, 98,.3), 0 2px 2px 0 rgba(197, 17, 98,.24), 0 1px 5px 0 rgba(197, 17, 98,.22);
+
+.card_header {
+    top: 0;
+    min-height: 70px;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.22);
+    background-color: #263238;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
 }
 
+.bar_container {
+    width: 95%;
+    padding: 20px;
+    background-color: #263238;
+    border-radius: 8px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.24), 0 1px 5px 0 rgba(0,0,0,.22);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.bar_container a,i {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.bar_container a:hover {
+    color: white;
+}
+.text_container {
+    border: 1px solid black;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+
+}
+.col_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+}
+.spacer{
+    height: 10%;
+}
 @media only screen and (min-width: 781px) {
+    .col_container{
+        width: 30%;
+        height: 50%;
+    }
+    .bar_container {
+        width: 90%;
+    }
+    .card_container{
+        flex-direction: row;
+    }
+    .card_container img {
+        width: 20%;
+        height: auto;
+    }
+    .card{
+        width: 80%;
+        height: 80vh;
+    }
     .landing_container {
         padding-top: 70px;
+    }
+    .landing_container .card .card_container{
+        flex-direction: row;
+    }
+    .spacer{
+        display: none;
+    }
+    #landing_spacer{
+        height: 100%;
+        width: 30%;
+    }
+    #introduction {
+        width: 60%;
+        height: 100%;
+        transform: scale(0);
+        animation: appear_element 1s 3s forwards;
+    }
+}
+
+
+@keyframes appear_element {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
     }
 }

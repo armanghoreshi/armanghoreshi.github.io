@@ -15,18 +15,18 @@
 .navbar a {
     float: right;
     display: block;
-    color: #01579B;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    background-color: #80D8FF;
+    background-color: #4FC3F7;
     margin: 5px;
     border-radius: 4px;
 }
 
 .navbar a:hover {
-    background-color: #4FC3F7;
+    background-color: #80D8FF;
     color: white;
     box-shadow: 0 3px 1px -2px rgba(1,87,155,.3), 0 2px 2px 0 rgba(1,87,155,.24);
     transform: translateY(1px) translateX(-1px);
