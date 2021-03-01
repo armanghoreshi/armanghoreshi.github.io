@@ -31,7 +31,7 @@ body{
     padding: 5px;
     display: flex;
     flex-direction: column;
-
+    border: 1px black solid;
 }
 #landing_spacer{
     height: 30%;
@@ -86,14 +86,24 @@ body{
     min-height: 70px;
     width: 100%;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.22);
-    background-color: #263238;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     text-align: center;
     padding: 20px;
 }
-
+.header_black{
+    background-color: #263238;
+}
+.header_blue{
+    background-color: #1565C0;
+}
+.header_green{
+     background-color: #263238;
+}
+.header_red{
+    background-color: #263238;
+}
 .bar_container {
     width: 95%;
     padding: 20px;
@@ -106,6 +116,10 @@ body{
 .bar_container a,i {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    margin: 2px;
+}
+.bar_container i {
+    font-size: 22px;
 }
 .bar_container a:hover {
     color: white;
