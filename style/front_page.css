@@ -31,7 +31,7 @@ body{
     padding: 5px;
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
 }
 #landing_spacer{
     height: 30%;
@@ -125,7 +125,7 @@ body{
     color: white;
 }
 .text_container {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 90%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
