@@ -68,7 +68,7 @@ body{
 
     font-family: Roboto, sans-serif;
     font-size: 40px;
-    animation: float_section 2s infinite ease-in-out;
+    animation: float_section 1900ms infinite ease-in-out;
 }
 .under_section_icon{
     border-radius: 100%;
@@ -94,11 +94,16 @@ body{
 }
 
 .subsection_container{
-    border: black 1px solid;
+    /*border: black 1px solid;*/
     width: 100%;
     height: 100%;
 
     margin: 5px;
+}
+.subsection_container h3{
+    border-left: gold 3px solid;
+    padding-left: 3px;
+    box-sizing: content-box;
 }
 .reg_spacer{
     height: 20%;
